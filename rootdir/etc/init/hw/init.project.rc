@@ -1,14 +1,19 @@
-import /vendor/etc/init/hw/init.mtkgki.rc
 
-# MTK project .rc configure
+on early-init
+   enable vendor.nfc_hal_service
 
 on init
-    mkdir /mnt/media_rw/usbotg 0700 media_rw media_rw
-    mkdir /storage/usbotg 0700 root root
+    # Set gesture touch permissions
+    chown system system /proc/gesture_function
+    chmod 0660 /proc/gesture_function
+
+    # OTG
+    write /sys/devices/platform/odm/odm:tran_battery/OTG_CTL 1
+
+on post-fs
+   start nfc_hal_service.tms
 
 on post-fs-data
-
-#Camera
     chmod 0660 /dev/MAINAF
     chown system camera /dev/MAINAF
 
@@ -30,16 +35,12 @@ on post-fs-data
     chmod 0660 /dev/BU64745GWZAF
     chown system camera /dev/BU64745GWZAF
 
-#SMB
     chown system system /proc/smb/ScreenComm
     chmod 0660 /proc/smb/ScreenComm
 
     chmod 0660 /dev/spm
     chown system system /dev/spm
 
-    chown system system /sys/class/tran_class/water_detect/tran_wd_cmd
-
-    # BSP:modify for LRA XLWYEHLYEL-1 by hongwu.zhan 20221104 start
     chown system system /sys/class/leds/vibrator_single/activate
     chown system system /sys/class/leds/vibrator_single/activate_mode
     chown system system /sys/class/leds/vibrator_single/awrw
@@ -76,34 +77,12 @@ on post-fs-data
     chown system system /sys/class/leds/vibrator_single/trigger
     chown system system /sys/class/leds/vibrator_single/uevent
     chown system system /sys/class/leds/vibrator_single/vbat_monitor
-    # BSP:modify for LRA XLWYEHLYEL-1 by hongwu.zhan 20221104 end
 
-on init
-    # Refer to http://source.android.com/devices/tech/storage/index.html
-    # It said, "Starting in Android 4.4, multiple external storage devices are surfaced to developers through
-    #           Context.getExternalFilesDirs(), Context.getExternalCacheDirs(), and Context.getObbDirs().
-    #           External storage devices surfaced through these APIs must be a semi-permanent part of the device (such as an SD card slot in a battery compartment).
-    #           Developers expect data stored in these locations to be available over long periods of time."
-    # Therefore, if the target doesn't support sd hot-plugging (Ex: the SD card slot in a battery compartment), we need to export SECONDARY_STORAGE in 'boot' section
-    #
-    # export SECONDARY_STORAGE /storage/sdcard1
+    # Create audiohal directories
+    mkdir /data/vendor/audiohal 0770 audio audio
+    mkdir /data/vendor/audiohal/audio_param 0770 audio audio
+    restorecon_recursive /data/vendor/audiohal
 
-service fuse_usbotg /system/bin/sdcard -u 1023 -g 1023 -w 1023 -d /mnt/media_rw/usbotg /storage/usbotg
-    class late_start
-    disabled
-
-# start mmstat
-on property:sys.boot_completed=1
-    mkdir /sys/kernel/tracing/instances/mmstat 711
-    write /sys/kernel/tracing/instances/mmstat/tracing_on 0
-    write /sys/kernel/tracing/instances/mmstat/buffer_size_kb 16
-    write /sys/kernel/tracing/instances/mmstat/events/mmstat/enable 1
-    write /sys/kernel/tracing/instances/mmstat/tracing_on 1
-
-#SPD: modify for swap zram write-back by shuang.zhou at 20201020 start
 on boot
-    swapon_all /vendor/etc/memfusion2/fstab.enableswap
-
-on property:sys.boot_completed=1
-    write /sys/module/memfusion/parameters/force_udelay 5000
-#SPD: modify for swap zram write-back by shuang.zhou at 20201020 end
+    # Stop Serial Console
+    stop console
