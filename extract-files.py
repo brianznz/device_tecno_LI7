@@ -120,7 +120,7 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('libbinder.so', 'libbinder-v31.so')
         .replace_needed('libutils.so', 'libutils-v31.so')
         .add_needed('libcamera_metadata_shim.so'),
-    ('vendor/lib64/libvendor.goodix.hardware.biometrics.fingerprint@2.1.so', 'vendor/lib64/vendor.silead.hardware.fingerprintext@1.0.so'): blob_fixup()
+    ('vendor/lib64/libvendor.goodix.hardware.biometrics.fingerprint@2.1.so', 'vendor/lib64/vendor.silead.hardware.fingerprintext@1.0.so', 'vendor/lib64/vendor.silead.hardware.fingerprintext@1.0-adapter-helper.so'): blob_fixup()
         .replace_needed('libhidlbase.so', 'libhidlbase-v32.so'),
     'vendor/lib64/librt_extamp_intf.so': blob_fixup()
         .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so'),
