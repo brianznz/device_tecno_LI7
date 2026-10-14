@@ -1,0 +1,165 @@
+From 42c2aac03dd974d6d99b472b6567ba0b91efbef5 Mon Sep 17 00:00:00 2001
+From: fjrXTR <fajarslebew31@gmail.com>
+Date: Sat, 10 Jan 2026 08:11:08 +0000
+Subject: [PATCH] SystemUI: biometrics: Add HBM Trigger for Transsion UDFPS
+
+* it's very unfortunate that Transsion is not open-source at all on the kernel side. To fix this In-display Fingerprint (On-display Fingerprint), we have to use a forceful method, which is by triggering the HBM (High Brightness Mode) in the UdfpsController. so that it can run with the native HAL Service
+
+* Thx to rianixia for help me to fix this
+
+* Thx for fjrXTR for commit!
+
+Change-Id: I61e510ac4dbb98c03093146366fc09269ad09996
+Signed-off-by: fjrXTR <fajarslebew31@gmail.com>
+Signed-off-by: KimelaZX <mmikailrei@gmail.com>
+---
+ .../systemui/biometrics/UdfpsController.java  | 106 +++++++++++++++++-
+ 1 file changed, 105 insertions(+), 1 deletion(-)
+
+diff --git a/packages/SystemUI/src/com/android/systemui/biometrics/UdfpsController.java b/packages/SystemUI/src/com/android/systemui/biometrics/UdfpsController.java
+index 2e71353470359..20fdc61d55759 100644
+--- a/packages/SystemUI/src/com/android/systemui/biometrics/UdfpsController.java
++++ b/packages/SystemUI/src/com/android/systemui/biometrics/UdfpsController.java
+@@ -62,6 +62,12 @@
+ import android.view.WindowManager;
+ import android.view.accessibility.AccessibilityManager;
+ 
++import android.graphics.PixelFormat;
++import android.view.Gravity;
++import android.view.Surface;
++import android.view.SurfaceControl;
++import android.view.ViewRootImpl;
++
+ import androidx.annotation.NonNull;
+ import androidx.annotation.Nullable;
+ 
+@@ -147,9 +153,11 @@
+  */
+ @SuppressWarnings("deprecation")
+ @SysUISingleton
+-public class UdfpsController implements DozeReceiver, Dumpable {
++public class UdfpsController implements DozeReceiver, Dumpable, Runnable {
+     private static final String TAG = "UdfpsController";
+     private static final long AOD_SEND_FINGER_UP_DELAY_MILLIS = 1000;
++    private View mHbmDummyView;
++    private SurfaceControl mHbmSurfaceControl;
+ 
+     private static final long MIN_UNCHANGED_INTERACTION_LOG_INTERVAL = 50;
+ 
+@@ -1096,6 +1104,7 @@ private void onFingerDown(
+             long gestureStart,
+             boolean isAod) {
+         mExecution.assertIsMainThread();
++        createHbmSurfaceControl();
+ 
+         if (mOverlay == null) {
+             Log.w(TAG, "Null request in onFingerDown");
+@@ -1195,6 +1204,8 @@ private void onFingerUp(
+             long time,
+             long gestureStart,
+             boolean isAod) {
++        destroyHbmSurfaceControl();
++
+         mExecution.assertIsMainThread();
+         mActivePointerId = MotionEvent.INVALID_POINTER_ID;
+         mAcquiredReceived = false;
+@@ -1220,6 +1231,99 @@ private void onFingerUp(
+         cancelAodSendFingerUpAction();
+     }
+ 
++    private void createHbmSurfaceControl() {
++        if (mHbmSurfaceControl != null) {
++            return;
++        }
++        if (mContext == null) {
++            return;
++        }
++
++        WindowManager wm = mContext.getSystemService(WindowManager.class);
++        if (wm == null) {
++            return;
++        }
++
++        Rect sensorBounds = mOverlayParams.getSensorBounds();
++        if (sensorBounds == null) {
++            return;
++        }
++
++        WindowManager.LayoutParams params = new WindowManager.LayoutParams(
++                sensorBounds.width(),
++                sensorBounds.height(),
++                sensorBounds.left,
++                sensorBounds.top,
++                2024,
++                0x1000028,
++                PixelFormat.TRANSLUCENT);
++
++        params.setTitle("TranshitHBMController");
++        params.gravity = Gravity.TOP | Gravity.LEFT;
++
++        mHbmDummyView = new View(mContext);
++        mHbmDummyView.setAlpha(0.0f);
++
++        try {
++            wm.addView(mHbmDummyView, params);
++        } catch (Exception e) {
++            Log.e(TAG, "Failed to add HBM dummy view", e);
++            mHbmDummyView = null;
++            return;
++        }
++
++        ViewRootImpl viewRoot = mHbmDummyView.getViewRootImpl();
++        if (viewRoot == null) {
++            mHbmDummyView.post(this);
++            return;
++        }
++
++        SurfaceControl sc = viewRoot.getSurfaceControl();
++        if (sc != null && sc.isValid()) {
++            mHbmSurfaceControl = sc;
++        } else {
++            wm.removeView(mHbmDummyView);
++            mHbmDummyView = null;
++        }
++    }
++
++    private void destroyHbmSurfaceControl() {
++        if (mHbmDummyView != null) {
++            WindowManager wm = mContext.getSystemService(WindowManager.class);
++            if (wm != null) {
++                try {
++                    wm.removeView(mHbmDummyView);
++                } catch (IllegalArgumentException e) {
++                    Log.e(TAG, "Failed to remove HBM dummy view", e);
++                }
++            }
++        }
++        mHbmDummyView = null;
++        mHbmSurfaceControl = null;
++    }
++
++    @Override
++    public void run() {
++        if (mHbmDummyView == null) {
++            return;
++        }
++        ViewRootImpl viewRoot = mHbmDummyView.getViewRootImpl();
++        if (viewRoot != null) {
++            SurfaceControl sc = viewRoot.getSurfaceControl();
++            if (sc != null && sc.isValid()) {
++                setHbmSurfaceControl(sc);
++            }
++        }
++    }
++
++    public void setHbmSurfaceControl(SurfaceControl sc) {
++        mHbmSurfaceControl = sc;
++    }
++
++    public View getHbmDummyView() {
++        return mHbmDummyView;
++    }
++
+     /**
+      * Callback for fingerUp and fingerDown events.
+      */
