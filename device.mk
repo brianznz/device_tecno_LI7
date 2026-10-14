@@ -39,8 +39,18 @@ PRODUCT_PACKAGES += \
 # Kernel
 PRODUCT_ENABLE_UFFD_GC := true
 
-# Overlays
+# Overlays (like dt16)
+$(call inherit-product, hardware/mediatek/overlay/mssi.mk)
 PRODUCT_ENFORCE_RRO_TARGETS := *
+PRODUCT_PACKAGES += \
+    FrameworksResTarget \
+    SettingsResTarget \
+    SettingsProviderResTarget \
+    SystemUIResTarget \
+    OpenDeltaOverlayMT6789
+
+PRODUCT_PACKAGES += \
+    ApertureOverlay
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
