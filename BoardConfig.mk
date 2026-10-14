@@ -95,8 +95,8 @@ BOARD_AVB_VENDOR_BOOT_ALGORITHM := SHA256_RSA4096
 BOARD_AVB_VENDOR_BOOT_ROLLBACK_INDEX := 1
 BOARD_AVB_VENDOR_BOOT_ROLLBACK_INDEX_LOCATION := 1
 
-# VINTF
-DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
+# VINTF (same layout as dt16 reference)
+DEVICE_MANIFEST_FILE += $(CONFIGS_PATH)/vintf/manifest.xml
 
 # Inherit the proprietary files
 include vendor/infinix/X6880/BoardConfigVendor.mk
