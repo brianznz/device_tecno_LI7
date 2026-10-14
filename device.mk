@@ -48,42 +48,23 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 # Product characteristics
 PRODUCT_CHARACTERISTICS := default
 
-# Rootdir
+# Rootdir (same list as dt16 reference)
 PRODUCT_PACKAGES += \
-    init.insmod.sh \
-    init.mf_nowb.sh \
-    init.spd_cpu_set.sh \
-    init.tasksetEnd.sh \
-    init.tasksetStart.sh \
-    init.tran_mcf.sh \
-
-PRODUCT_PACKAGES += \
-    fstab.enableswap_wb \
-    factory_init.connectivity.common.rc \
-    factory_init.connectivity.rc \
-    factory_init.project.rc \
-    factory_init.rc \
-    init.aee.rc \
-    init.cgroup.rc \
+    fstab.mt6789 \
+    fstab.mt6789.vendor_ramdisk \
+    init_connectivity.rc \
     init.connectivity.common.rc \
     init.connectivity.rc \
+    init.insmod.sh \
+    init.insmod.mt6789.cfg \
     init.modem.rc \
+    init.mt6789.power.rc \
     init.mt6789.rc \
-    init.mt6789.usb.rc \
     init.mtkgki.rc \
     init.project.rc \
+    init.recovery.usb.rc \
     init.sensor_2_0.rc \
-    init_connectivity.rc \
-    meta_init.connectivity.common.rc \
-    meta_init.connectivity.rc \
-    meta_init.modem.rc \
-    meta_init.project.rc \
-    meta_init.rc \
-    meta_init.vendor.rc \
-    multi_init.rc \
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/etc/fstab.enableswap_wb:$(TARGET_VENDOR_RAMDISK_OUT)/first_stage_ramdisk/fstab.enableswap_wb
+    ueventd.mt6789.rc
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \

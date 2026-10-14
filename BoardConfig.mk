@@ -79,7 +79,7 @@ TARGET_ODM_DLKM_PROP += $(CONFIGS_PATH)/properties/odm_dlkm.prop
 TARGET_VENDOR_DLKM_PROP += $(CONFIGS_PATH)/properties/vendor_dlkm.prop
 
 # Recovery
-TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.enableswap_wb
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.mt6789
 TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
