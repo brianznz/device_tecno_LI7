@@ -69,7 +69,7 @@ BOARD_INFINIX_DYNAMIC_PARTITIONS_SIZE := 9122611200 # TODO: Fix hardcoded value
 # Platform
 TARGET_BOARD_PLATFORM := mt6789
 
-# Properties (same layout as dt16 reference: configs/properties/)
+# Properties
 TARGET_SYSTEM_PROP += $(CONFIGS_PATH)/properties/system.prop
 TARGET_VENDOR_PROP += $(CONFIGS_PATH)/properties/vendor.prop
 TARGET_PRODUCT_PROP += $(CONFIGS_PATH)/properties/product.prop
@@ -86,7 +86,7 @@ TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
 TARGET_USERIMAGES_USE_F2FS := true
 BOARD_INCLUDE_RECOVERY_RAMDISK_IN_VENDOR_BOOT := true
 
-# SEPolicy (like dt16)
+# SEPolicy
 include device/mediatek/sepolicy_vndr/SEPolicy.mk
 
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
@@ -100,7 +100,7 @@ TARGET_OTA_ASSERT_DEVICE := X6880,Infinix-X6880
 VENDOR_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
 BOOT_SECURITY_PATCH := $(VENDOR_SECURITY_PATCH)
 
-# Verified Boot (like dt16)
+# Verified Boot
 BOARD_AVB_ENABLE := true
 BOARD_AVB_ALGORITHM := SHA256_RSA2048
 BOARD_AVB_KEY_PATH := external/avb/test/data/testkey_rsa2048.pem
@@ -122,7 +122,7 @@ BOARD_AVB_VBMETA_VENDOR_ALGORITHM := SHA256_RSA2048
 BOARD_AVB_VBMETA_VENDOR_ROLLBACK_INDEX := 1
 BOARD_AVB_VBMETA_VENDOR_ROLLBACK_INDEX_LOCATION := 3
 
-# VINTF (same layout as dt16 reference)
+# VINTF
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
 	$(CONFIGS_PATH)/vintf/framework_compatibility_matrix.xml \
 	hardware/mediatek/vintf/mediatek_framework_compatibility_matrix.xml
