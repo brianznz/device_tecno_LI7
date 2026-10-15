@@ -2210,7 +2210,7 @@ vendor/etc/tranfac/res/aging_video.mp4
 vendor/etc/tranfac/res/lab_audio.mp3
 vendor/etc/tranfac/sign/Signature.json
 vendor/etc/vintf/manifest/com.anc.fingerprint.extension@1.0-service.xml
-vendor/etc/vintf/manifest/gnss-default.xml
+vendor/etc/vintf/manifest/gnss-default.xml:vendor/etc/vintf/manifest/gnss-mtk.xml
 vendor/etc/vintf/manifest/gnss@2.1-service.xml
 vendor/etc/vintf/manifest/lbs_hidl_service@1.0.xml
 vendor/etc/vintf/manifest/lights-mtk-default.xml
