@@ -219,6 +219,7 @@ vendor/lib/mt6789/libmtk_drvb.so;SYMLINK=vendor/lib/libmtk_drvb.so
 vendor/lib64/mt6789/libmtk_drvb.so;SYMLINK=vendor/lib64/libmtk_drvb.so
 vendor/lib/mt6789/libmtkcam.atmseventmgr.so;SYMLINK=vendor/lib/libmtkcam.atmseventmgr.so
 vendor/lib/vendor.mediatek.hardware.camera.atms@1.0.so
+vendor/lib64/vendor.mediatek.hardware.camera.atms@1.0.so
 vendor/lib64/hw/mt6789/android.hardware.camera.provider@2.6-impl-mediatek.so
 vendor/lib64/hw/mt6789/vendor.mediatek.hardware.camera.bgservice@1.1-impl.so;SYMLINK=vendor/lib64/hw/vendor.mediatek.hardware.camera.bgservice@1.1-impl.so
 vendor/lib64/hw/mt6789/vendor.mediatek.hardware.camera.isphal@1.0-impl.so;SYMLINK=vendor/lib64/hw/vendor.mediatek.hardware.camera.isphal@1.0-impl.so
@@ -2228,7 +2229,6 @@ vendor/etc/vintf/manifest/manifest_apuware_apusys.xml
 vendor/etc/vintf/manifest/manifest_apuware_hmp.xml
 vendor/etc/vintf/manifest/manifest_apuware_utils.xml
 vendor/etc/vintf/manifest/manifest_cameraprovider.xml
-vendor/etc/vintf/manifest/manifest_face_default.xml
 vendor/etc/vintf/manifest/manifest_fingerprint.xml
 vendor/etc/vintf/manifest/manifest_hwcomposer.xml
 vendor/etc/vintf/manifest/manifest_media_c2_V1_1_default.xml
@@ -2430,7 +2430,6 @@ vendor/lib/mt6789/libvpudv3a_vcodec.so;SYMLINK=vendor/lib/libvpudv3a_vcodec.so
 vendor/lib64/hw/anc.hal.so
 vendor/lib64/hw/audio_policy.stub.so
 vendor/lib64/hw/awinic.audio.effect.so
-vendor/lib64/hw/face.default.so
 vendor/lib64/hw/libanc_extension_service.so
 vendor/lib64/hw/paytrigger.trustonic.so
 vendor/lib64/hw/thermal_hal.so
