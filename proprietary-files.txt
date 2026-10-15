@@ -1011,7 +1011,6 @@ vendor/bin/hw/mt6789/android.hardware.graphics.allocator@4.0-service-mediatek.mt
 vendor/bin/hw/android.hardware.graphics.composer@2.1-service
 vendor/bin/hw/android.hardware.graphics.composer@2.3-service
 vendor/bin/hw/android.hardware.graphics.composer@2.4-service
-vendor/bin/hw/android.hardware.memtrack-service.mediatek
 vendor/bin/hw/vendor.mediatek.hardware.mms@1.6-service
 vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service
 vendor/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc
@@ -1186,14 +1185,12 @@ vendor/lib64/libadpcmdec_mtk.so
 vendor/lib64/libcodec2_hidl@1.1.so
 vendor/lib64/libcodec2_hidl@1.2.so
 vendor/lib64/libcodec2_hidl_plugin.so
-vendor/lib64/libcodec2_mtk_vdec.so
 vendor/lib64/libcodec2_mtk_venc.so
 vendor/lib64/libcodec2_soft_common.so
 vendor/lib64/libcodec2_vpp_qt_plugin.so
 vendor/lib64/libcodec2_vpp_rs_plugin.so
 vendor/lib64/libformatter.so
 vendor/lib64/libmp3dec_mtk.so
-vendor/lib64/libmtkperf_client_vendor.so
 vendor/lib64/libsfplugin_ccodec_utils.so
 vendor/lib64/libstagefright_bufferpool@2.0.1.so
 vendor/lib64/libstagefrighthw.so
@@ -2615,7 +2612,6 @@ vendor/lib64/libpkm.so
 vendor/lib64/libpn557_fw.so
 vendor/lib64/libpnpmgr.so
 vendor/lib64/libpowerhal.so
-vendor/lib64/libpowerhalwrap_vendor.so
 vendor/lib64/mt6789/libpq_cust_base.so;SYMLINK=vendor/lib64/libpq_cust_base.so
 vendor/lib64/mt6789/libremosaic_wrapper.so;SYMLINK=vendor/lib64/libremosaic_wrapper.so
 vendor/lib64/mt6789/libremosaiclib.so;SYMLINK=vendor/lib64/libremosaiclib.so
