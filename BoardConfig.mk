@@ -7,20 +7,31 @@ DEVICE_PATH := device/infinix/X6880
 KERNEL_PATH := $(DEVICE_PATH)-kernel
 CONFIGS_PATH := $(DEVICE_PATH)/configs
 
+# Enable 64-bit for non-zygote.
+ZYGOTE_FORCE_64 := true
+
+# Force any prefer32 targets to be compiled as 64 bit.
+IGNORE_PREFER32_ON_DEVICE := true
+
+# Include 64-bit drmserver to support 64-bit only devices
+TARGET_DYNAMIC_64_32_DRMSERVER := true
+
+# Include 64-bit mediaserver to support 64-bit only devices
+TARGET_DYNAMIC_64_32_MEDIASERVER := true
+
 # A/B
 AB_OTA_UPDATER := true
 AB_OTA_PARTITIONS +=
 
-# Architecture
+# Architecture (mt6789: Cortex-A76 + A55, armv8.2 with dotprod)
 TARGET_ARCH := arm64
-TARGET_ARCH_VARIANT := armv8-a
+TARGET_ARCH_VARIANT := armv8-2a-dotprod
 TARGET_CPU_ABI := arm64-v8a
-TARGET_CPU_ABI2 := 
-TARGET_CPU_VARIANT := generic
-TARGET_CPU_VARIANT_RUNTIME := cortex-a55
+TARGET_CPU_ABI2 :=
+TARGET_CPU_VARIANT := cortex-a76
 
 TARGET_2ND_ARCH := arm
-TARGET_2ND_ARCH_VARIANT := armv7-a-neon
+TARGET_2ND_ARCH_VARIANT := armv8-2a
 TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := generic
