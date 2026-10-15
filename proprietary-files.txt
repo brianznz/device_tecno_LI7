@@ -1216,6 +1216,7 @@ vendor/lib/tms-cos-dl-ree.so
 vendor/lib/tms-utils.so
 vendor/lib/vendor.tms.tmsnfc@1.0.so
 vendor/lib64/7816-3-T1.so
+vendor/lib/7816-3-T1.so
 vendor/lib64/nfc_nci.thn31nfc.tms.so
 vendor/lib64/nfc_nci_nxp_snxxx.so
 vendor/lib64/vendor.nxp.nxpese@1.0.so
@@ -1246,9 +1247,6 @@ vendor/lib64/vendor.mediatek.hardware.nvram@1.1.so
 
 # Power
 system_ext/lib/vendor.mediatek.hardware.mtkpower-V2-ndk.so
-vendor/bin/hw/vendor.mediatek.hardware.mtkpower@1.0-service
-vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-init.rc
-vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-service.rc
 vendor/lib64/hw/power.default.so
 vendor/lib64/hw/vendor.mediatek.hardware.mtkpower@1.2-impl.so
 vendor/lib64/libpower_timer.so
