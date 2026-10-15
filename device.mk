@@ -254,6 +254,52 @@ PRODUCT_PACKAGES += \
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
+# Power (mtkpower 1.2 impl in blobs)
+PRODUCT_PACKAGES += \
+    android.hardware.power-service.pixel-libperfmgr
+
+PRODUCT_PACKAGES += \
+    vendor.mediatek.hardware.mtkpower@1.2-service.stub:64 \
+    vendor.mediatek.hardware.mtkpower@1.0.vendor:64 \
+    vendor.mediatek.hardware.mtkpower@1.1.vendor:64
+
+PRODUCT_PACKAGES += \
+    android.hardware.power@1.3.vendor:64
+
+PRODUCT_PACKAGES += \
+    libmtkperf_client_vendor:64 \
+    libmtkperf_client:64 \
+    libpower.vendor:64
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/power/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
+
+# Keylayout
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/keylayout/mtk-tpd.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/mtk-tpd.kl
+
+# USB (1.2 service v2 in blobs)
+$(call soong_config_set_bool,android_hardware_mediatek_usb,audio_accessory_supported,true)
+PRODUCT_PACKAGES += \
+    android.hardware.usb-service.mediatek \
+    android.hardware.usb.gadget-service.mediatek \
+    init.mt6789.usb.rc
+
+# Wi-Fi (1.0 lazy service + hostapd in blobs)
+$(call soong_config_set_bool,mediatek_wifi_hal,use_pre_u_qpr2_struct,true)
+PRODUCT_PACKAGES += \
+    libwifi-hal-wrapper:64 \
+    wpa_supplicant \
+    hostapd \
+    android.hardware.wifi-service \
+    libkeystore-wifi-hidl:64 \
+    libkeystore-engine-wifi-hidl:64
+
+PRODUCT_PACKAGES += \
+    android.hardware.tetheroffload.config@1.0.vendor:64 \
+    android.hardware.tetheroffload.control@1.0.vendor:64 \
+    android.hardware.tetheroffload.control@1.1.vendor:64
+
 # Product characteristics
 PRODUCT_CHARACTERISTICS := default
 
