@@ -1500,7 +1500,6 @@ vendor/bin/bip_ap
 vendor/bin/boringssl_self_test32
 vendor/bin/boringssl_self_test64
 vendor/bin/bt_dump
-vendor/bin/ccci_fsd
 vendor/bin/chg_sence
 vendor/bin/conninfra_loader
 vendor/bin/dconfig
