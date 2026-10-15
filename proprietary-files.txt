@@ -4,6 +4,7 @@
 vendor/bin/hw/android.hardware.audio.service.mediatek
 vendor/etc/init/android.hardware.audio.service.mediatek.rc
 vendor/lib/libbwc.so
+vendor/lib64/libbwc.so
 # libladder
 vendor/lib/libladder.so
 vendor/lib64/libladder.so
@@ -1114,6 +1115,7 @@ vendor/lib64/vendor.trustonic.tee@1.1.so
 
 # GNSS
 vendor/bin/hw/android.hardware.gnss-service.mediatek
+vendor/lib64/hw/android.hardware.gnss-impl-mediatek.so
 vendor/bin/mnld
 vendor/bin/mtk_agpsd
 vendor/etc/init/android.hardware.gnss-service.mediatek.rc
@@ -1513,7 +1515,6 @@ vendor/bin/mt6789/dumpfaultd.mt6789;SYMLINK=vendor/bin/dumpfaultd.mt6789
 vendor/bin/dumpsys
 vendor/bin/eara_io_service
 vendor/bin/em_hidl
-vendor/bin/factory
 vendor/bin/fpsgo
 vendor/bin/gbe
 vendor/bin/get_ufs_error
