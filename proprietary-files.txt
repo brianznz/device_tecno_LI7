@@ -1185,7 +1185,6 @@ vendor/lib64/libadpcmdec_mtk.so
 vendor/lib64/libcodec2_hidl@1.1.so
 vendor/lib64/libcodec2_hidl@1.2.so
 vendor/lib64/libcodec2_hidl_plugin.so
-vendor/lib64/libcodec2_mtk_venc.so
 vendor/lib64/libcodec2_soft_common.so
 vendor/lib64/libcodec2_vpp_qt_plugin.so
 vendor/lib64/libcodec2_vpp_rs_plugin.so
@@ -1416,7 +1415,6 @@ vendor/etc/init/android.hardware.usb@1.2-service-mediatekv2.rc
 vendor/etc/vintf/manifest/android.hardware.usb@1.2-service-mediatekv2.xml
 
 # Vibrator
-vendor/bin/hw/android.hardware.vibrator-service.mediatek
 vendor/lib64/hw/vibrator.default.so
 vendor/lib64/libaacvibrator.so
 vendor/lib64/vendor.aac.hardware.richtap.vibrator-V1-ndk_platform.so
