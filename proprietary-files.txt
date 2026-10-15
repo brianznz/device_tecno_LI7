@@ -998,7 +998,6 @@ vendor/lib64/vendor.transsion.performance.sched@1.0.so
 vendor/firmware/lib3a.ccu
 
 # CAS
-vendor/bin/hw/android.hardware.cas@1.2-service-lazy
 vendor/etc/init/android.hardware.cas@1.2-service-lazy.rc
 vendor/etc/vintf/manifest/android.hardware.cas@1.2-service-lazy.xml
 
@@ -1503,8 +1502,6 @@ vendor/bin/audiocmdservice_atci
 vendor/bin/autobt
 vendor/bin/bat_authencali
 vendor/bin/bip_ap
-vendor/bin/boringssl_self_test32
-vendor/bin/boringssl_self_test64
 vendor/bin/bt_dump
 vendor/bin/chg_sence
 vendor/bin/conninfra_loader
@@ -1514,7 +1511,6 @@ vendor/bin/dmabuf_dump
 vendor/bin/dmc_core
 vendor/bin/dtc_vendor
 vendor/bin/mt6789/dumpfaultd.mt6789;SYMLINK=vendor/bin/dumpfaultd.mt6789
-vendor/bin/dumpsys
 vendor/bin/eara_io_service
 vendor/bin/em_hidl
 vendor/bin/fpsgo
