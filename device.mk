@@ -138,6 +138,51 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libcurl.vendor:64
 
+# Display (composer + allocator 4.0 + mapper 4.0 in blobs)
+PRODUCT_PACKAGES += \
+    android.hardware.graphics.composer@2.3-service \
+    android.hardware.memtrack-service.mediatek
+
+PRODUCT_PACKAGES += \
+    android.hardware.graphics.allocator@4.0.vendor:64 \
+    android.frameworks.sensorservice@1.0.vendor:64 \
+    android.hardware.graphics.mapper@4.0.vendor:64 \
+    libhwc2on1adapter:64 \
+    libhwc2onfbadapter:64 \
+    libdrm.vendor:64
+
+PRODUCT_PACKAGES += \
+    ANGLE
+
+# DRM (clearkey + widevine services in blobs)
+PRODUCT_PACKAGES += \
+    com.android.hardware.drm.clearkey
+
+PRODUCT_PACKAGES += \
+    android.hardware.drm@1.4.vendor
+
+# Media (OMX 1.0 + C2 1.2 mediatek in blobs)
+$(call soong_config_set_bool,android_hardware_mediatek_codec2,link_v33_libstagefright_foundation,true)
+PRODUCT_PACKAGES += \
+    android.hardware.cas@1.2-service-lazy \
+    android.hardware.media.c2-mtk-service \
+    libcodec2_vndk.vendor:64 \
+    libeffects:64 \
+    libeffectsconfig.vendor:64 \
+    libavservices_minijail_vendor:64 \
+    libstagefright_softomx_plugin.vendor:64 \
+    libsfplugin_ccodec_utils.vendor:64 \
+    libcodec2_soft_common.vendor:64 \
+    libflatbuffers-cpp.vendor:64
+
+PRODUCT_PACKAGES += \
+    libchrome.vendor:64 \
+    libminijail:64 \
+    libminijail.vendor:64
+
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/media,$(TARGET_COPY_OUT_VENDOR)/etc)
+
 # fastbootd
 PRODUCT_PACKAGES += \
     android.hardware.fastboot@1.1-impl-mock \
