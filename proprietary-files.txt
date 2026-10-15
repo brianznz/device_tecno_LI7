@@ -209,6 +209,7 @@ vendor/bin/hw/mt6789/camerahalserver;SYMLINK=vendor/bin/hw/camerahalserver
 vendor/etc/init/camerahalserver.rc
 vendor/lib/hw/mt6789/vendor.mediatek.hardware.camera.atms@1.0-impl.so;SYMLINK=vendor/lib/hw/vendor.mediatek.hardware.camera.atms@1.0-impl.so
 vendor/lib/libion_mtk.so
+vendor/lib64/libion_mtk.so
 vendor/lib/libion_ulit.so
 vendor/lib/mt6789/libmtk_drvb.so;SYMLINK=vendor/lib/libmtk_drvb.so
 vendor/lib/mt6789/libmtkcam.atmseventmgr.so;SYMLINK=vendor/lib/libmtkcam.atmseventmgr.so
