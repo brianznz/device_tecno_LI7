@@ -88,6 +88,13 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
+    name: "init.mt6789.usb.rc",
+    src: "etc/init.mt6789.usb.rc",
+    sub_dir: "init/hw",
+    vendor: true
+}
+
+prebuilt_etc {
     name: "ueventd.mt6789.rc",
     filename: "ueventd.rc",
     src: "etc/ueventd.mt6789.rc",
