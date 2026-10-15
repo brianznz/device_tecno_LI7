@@ -1422,7 +1422,6 @@ vendor/etc/init/wlan_assistant.rc
 vendor/etc/vintf/manifest/android.hardware.wifi.hostapd.xml
 vendor/etc/vintf/manifest/android.hardware.wifi.supplicant.xml
 vendor/etc/vintf/manifest/android.hardware.wifi@1.0-service.xml
-vendor/lib64/libkeystore-engine-wifi-hidl.so
 vendor/lib64/libkeystore-wifi-hidl.so
 vendor/lib64/libwifi-hal.so
 vendor/lib64/vendor.transsion.hardware.wifi.hostapd@1.0.so
@@ -1494,7 +1493,6 @@ vendor/bin/hw/vendor.transsion.performance.sched@1.0-service
 vendor/bin/AgentTest
 vendor/bin/TransSchedTest
 vendor/bin/aee_aedv64_v2
-vendor/bin/aee_dumpstatev_v2
 vendor/bin/applypatch
 vendor/bin/atcid
 vendor/bin/audiocmdservice_atci
@@ -2544,7 +2542,6 @@ vendor/lib64/libhyperion_hap_ca.so
 vendor/lib64/libicd_decoder.so
 vendor/lib64/libimsg_log.so
 vendor/lib64/libkmsetkey.so
-vendor/lib64/libminiui.so
 vendor/lib64/libminizip.so
 vendor/lib64/libmipc.so
 vendor/lib64/libmmprofile.so
