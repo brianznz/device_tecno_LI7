@@ -110,6 +110,34 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth-service.mediatek
 
+# Camera (provider 2.6 impl-mediatek in vendor blobs)
+PRODUCT_PACKAGES += \
+    android.hardware.camera.common@1.0.vendor:64 \
+    android.hardware.camera.device@3.6.vendor:64 \
+    android.hardware.camera.provider@2.6.vendor:64
+
+PRODUCT_PACKAGES += \
+    libcamera_metadata_shim \
+    libdng_sdk.vendor \
+    libexif.vendor \
+    libpiex \
+    libpng.vendor
+
+# Fingerprint (2.1-service-mediatek + silead HAL in blobs)
+PRODUCT_PACKAGES += \
+    android.hardware.biometrics.fingerprint@2.1.vendor:64
+
+# GNSS (1.1/2.1 + measurement + visibility libs in blobs)
+PRODUCT_PACKAGES += \
+    android.hardware.gnss.measurement_corrections@1.1.vendor:64 \
+    android.hardware.gnss.visibility_control@1.0.vendor:64 \
+    android.hardware.gnss@1.1.vendor:64 \
+    android.hardware.gnss@2.1.vendor:64 \
+    android.hardware.gnss-V1-ndk.vendor:64
+
+PRODUCT_PACKAGES += \
+    libcurl.vendor:64
+
 # fastbootd
 PRODUCT_PACKAGES += \
     android.hardware.fastboot@1.1-impl-mock \
