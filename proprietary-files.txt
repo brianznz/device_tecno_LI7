@@ -1,8 +1,6 @@
 # Unpinned blobs from sys_tssi_64_armv82_infinix-user 15 AP3A.240905.015.A2 979960 dev-keys
 
 # Audio
-system_ext/bin/hw/android.hardware.audio.parameter_parser.service
-system_ext/etc/init/android.hardware.audio.parameter_parser.service.rc
 vendor/bin/hw/android.hardware.audio.service.mediatek
 vendor/etc/init/android.hardware.audio.service.mediatek.rc
 vendor/lib/libbwc.so
