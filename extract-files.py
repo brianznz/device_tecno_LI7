@@ -4,6 +4,11 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+from extract_utils.fixups_blob import (
+    blob_fixup,
+    blob_fixups_user_type,
+)
+
 from extract_utils.main import (
     ExtractUtils,
     ExtractUtilsModule,
@@ -16,9 +21,17 @@ namespace_imports = [
     'hardware/mediatek/libaedv',
 ]
 
+blob_fixups: blob_fixups_user_type = {
+    'vendor/bin/hw/android.hardware.security.keymint-service.trustonic': blob_fixup()
+        .replace_needed('android.hardware.security.keymint-V1-ndk_platform.so', 'android.hardware.security.keymint-V1-ndk.so')
+        .replace_needed('android.hardware.security.secureclock-V1-ndk_platform.so', 'android.hardware.security.secureclock-V1-ndk.so')
+        .replace_needed('android.hardware.security.sharedsecret-V1-ndk_platform.so', 'android.hardware.security.sharedsecret-V1-ndk.so'),
+}
+
 module = ExtractUtilsModule(
     'X6880',
     'infinix',
+    blob_fixups=blob_fixups,
     namespace_imports=namespace_imports,
 )
 
