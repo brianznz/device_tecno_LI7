@@ -1530,7 +1530,6 @@ vendor/bin/boringssl_self_test64
 vendor/bin/bt_dump
 vendor/bin/ccci_fsd
 vendor/bin/chg_sence
-vendor/bin/chipinfo
 vendor/bin/conninfra_loader
 vendor/bin/dconfig
 vendor/bin/dexecutor
@@ -1823,7 +1822,6 @@ vendor/etc/init/bat_authencali_init.rc
 vendor/etc/init/bootperf.rc
 vendor/etc/init/boringssl_self_test.rc
 vendor/etc/init/chg_sence_init.rc
-vendor/etc/init/chipinfo_init.rc
 vendor/etc/init/dmc_core.rc
 vendor/etc/init/dts.rc
 vendor/etc/init/eara-io-service.rc
