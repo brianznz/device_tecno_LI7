@@ -188,10 +188,60 @@ PRODUCT_PACKAGES += \
     android.hardware.fastboot@1.1-impl-mock \
     fastbootd
 
-# Health
+# Gatekeeper (trustonic impl in blobs)
 PRODUCT_PACKAGES += \
-    android.hardware.health@2.1-impl \
-    android.hardware.health@2.1-service
+    android.hardware.gatekeeper@1.0-impl:64 \
+    android.hardware.gatekeeper@1.0-service
+
+PRODUCT_PACKAGES += \
+    libgatekeeper.vendor:64
+
+# Health (2.1 service blob exists, use mediatek service)
+PRODUCT_PACKAGES += \
+    android.hardware.health-service.mediatek \
+    android.hardware.health-service.mediatek-recovery \
+    charger_res_images_vendor
+
+# HIDL base
+PRODUCT_PACKAGES += \
+    android.hidl.base@1.0:64 \
+    android.hidl.allocator@1.0:64 \
+    android.hidl.base@1.0.vendor:64 \
+    android.hidl.allocator@1.0.vendor:64 \
+    libhidlmemory.vendor:64 \
+    libhidltransport:64 \
+    libhidltransport.vendor:64 \
+    libhwbinder:64 \
+    libhwbinder.vendor:64
+
+# IMS (mtkradioex 3.0 + mms in manifest)
+$(call inherit-product, vendor/mediatek/ims/ims.mk)
+
+# Keymaster
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.keystore.app_attest_key.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.keystore.app_attest_key.xml
+
+# Keymint (trustonic service in blobs)
+PRODUCT_PACKAGES += \
+    android.hardware.security.keymint-V1-ndk.vendor:64 \
+    android.hardware.security.secureclock-V1-ndk.vendor:64 \
+    android.hardware.security.sharedsecret-V1-ndk.vendor:64 \
+    android.hardware.security.rkp-V3-ndk.vendor \
+    libcppbor_external.vendor:64
+
+# NFC (1.2 tms service + nxp HAL in blobs)
+PRODUCT_PACKAGES += \
+    android.hardware.nfc-service.nxp \
+    com.android.nfc_extras \
+    Tag
+
+# Radio (1.2/1.6 + config 1.3 in manifest)
+PRODUCT_PACKAGES += \
+    android.hardware.radio.config@1.3.vendor:64 \
+    android.hardware.radio@1.6.vendor:64
+
+PRODUCT_PACKAGES += \
+    mdota_symlink
 
 # Lights (lights-service-mediatek in blobs, use lineage service)
 PRODUCT_PACKAGES += \
