@@ -4470,10 +4470,6 @@ vendor/lib64/vendor.transsion.hardware.tranlogconfig@1.0.so
 vendor/lib64/vendor.transsion.hardware.trannet-V1-ndk_platform.so
 vendor/lib64/vendor.transsion.hardware.tranradio-V1-ndk_platform.so
 vendor/lib64/vendor.transsion.hardware.transtorage.storage@1.0.so
-vendor/odm/etc/vintf/manifest_dsds.xml
-vendor/odm/etc/vintf/manifest_qsqs.xml
-vendor/odm/etc/vintf/manifest_ss.xml
-vendor/odm/etc/vintf/manifest_tsts.xml
 vendor/raw_hdr/params_bin/gc13a0_EXPO_BRACKET_HDR_basic.bin
 vendor/raw_hdr/params_bin/gc13a0_EXPO_BRACKET_HDR_brightness.bin
 vendor/raw_hdr/params_bin/gc13a0_EXPO_BRACKET_HDR_nr.bin
