@@ -215,6 +215,7 @@ vendor/lib64/libion_mtk.so
 vendor/lib/libion_ulit.so
 vendor/lib64/libion_ulit.so
 vendor/lib/mt6789/libmtk_drvb.so;SYMLINK=vendor/lib/libmtk_drvb.so
+vendor/lib64/mt6789/libmtk_drvb.so;SYMLINK=vendor/lib64/libmtk_drvb.so
 vendor/lib/mt6789/libmtkcam.atmseventmgr.so;SYMLINK=vendor/lib/libmtkcam.atmseventmgr.so
 vendor/lib/vendor.mediatek.hardware.camera.atms@1.0.so
 vendor/lib64/hw/mt6789/android.hardware.camera.provider@2.6-impl-mediatek.so
@@ -780,6 +781,7 @@ vendor/lib64/mt6789/libamipengine.so;SYMLINK=vendor/lib64/libamipengine.so
 vendor/lib64/mt6789/libanc_dc_base.so;SYMLINK=vendor/lib64/libanc_dc_base.so
 vendor/lib64/mt6789/libarcsoft_low_light_shot.so;SYMLINK=vendor/lib64/libarcsoft_low_light_shot.so
 vendor/lib64/libasd.so
+vendor/lib64/libc++_shared.so
 vendor/lib64/mt6789/libcalculatesharpness.so;SYMLINK=vendor/lib64/libcalculatesharpness.so
 vendor/lib64/mt6789/libcam.afhal.so;SYMLINK=vendor/lib64/libcam.afhal.so
 vendor/lib64/mt6789/libcam.chdr.so;SYMLINK=vendor/lib64/libcam.chdr.so
