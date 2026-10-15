@@ -193,6 +193,48 @@ PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl \
     android.hardware.health@2.1-service
 
+# Lights (lights-service-mediatek in blobs, use lineage service)
+PRODUCT_PACKAGES += \
+    android.hardware.light-service.lineage
+
+# Neural networks (shim service in blobs)
+PRODUCT_PACKAGES += \
+    android.hardware.neuralnetworks@1.0.vendor:64 \
+    android.hardware.neuralnetworks@1.3.vendor:64 \
+    libtextclassifier_hash.vendor:64
+
+# Secure Element (1.2 service-mediatek in blobs)
+PRODUCT_PACKAGES += \
+    android.hardware.secure_element@1.2.vendor:64
+
+# Sensors (2.0 multihal-mediatek service in blobs)
+PRODUCT_PACKAGES += \
+    libsensorndkbridge:64 \
+    android.hardware.sensors@1.0.vendor:64 \
+    android.hardware.sensors@2.1.vendor:64 \
+    android.frameworks.sensorservice@1.0:64 \
+    android.frameworks.sensorservice@1.0.vendor:64 \
+    android.hardware.sensors-service.multihal \
+    android.hardware.sensors@2.0-subhal-impl-1.0 \
+    android.hardware.sensors@2.0-ScopedWakelock.vendor:64
+
+PRODUCT_PACKAGES += \
+    sensors.dynamic_sensor_hal:64
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
+
+# Thermal (2.0 mtk service in blobs)
+PRODUCT_PACKAGES += \
+    android.hardware.thermal-service.mediatek
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/thermal/thermal_info_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/thermal_info_config.json
+
+# Vibrator (mediatek service in blobs)
+PRODUCT_PACKAGES += \
+    android.hardware.vibrator-service.mediatek
+
 # Kernel
 PRODUCT_ENABLE_UFFD_GC := true
 
