@@ -183,7 +183,6 @@ vendor/etc/init/android.hardware.bluetooth@1.1-service-mediatek.rc
 vendor/lib64/libbluetooth_mtk.so
 vendor/lib64/libbt-vendor.so
 vendor/lib64/libnvram.so
-vendor/lib/libnvram.so
 vendor/lib64/libnvram_sec.so
 
 # Bluetooth (A2DP)
@@ -1152,7 +1151,6 @@ vendor/lib64/hw/kmsetkey.trustonic.so;SYMLINK=vendor/lib64/hw/kmsetkey.default.s
 vendor/lib64/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-impl.so
 
 # Light
-vendor/bin/hw/android.hardware.lights-service.mediatek
 
 # Local time
 vendor/lib64/hw/local_time.default.so
@@ -1241,7 +1239,6 @@ vendor/etc/init/vendor.mediatek.hardware.nvram@1.1-sevice.rc
 vendor/lib64/hw/vendor.mediatek.hardware.nvram@1.1-impl.so
 vendor/lib64/libconnfem.so
 vendor/lib64/libfile_op.so
-vendor/lib/libfile_op.so
 vendor/lib64/libhwm.so
 vendor/lib64/vendor.mediatek.hardware.nvram@1.0.so
 vendor/lib64/vendor.mediatek.hardware.nvram@1.1.so
@@ -1292,7 +1289,6 @@ vendor/lib64/vendor.mediatek.hardware.mtkradioex@3.0.so
 vendor/lib64/vendor.mediatek.hardware.nwk_opt@1.0.so
 
 # Radio (IMS)
-vendor/bin/hw/vtservice_hidl
 vendor/bin/bip
 vendor/bin/charon
 vendor/bin/epdg_wod
@@ -1313,7 +1309,6 @@ vendor/etc/init/init.volte_imsm_93.rc
 vendor/etc/init/init.volte_md_status.rc
 vendor/etc/init/init.volte_stack.rc
 vendor/etc/init/init.volte_ua.rc
-vendor/etc/init/init.vtservice_hidl.rc
 vendor/etc/init/init.wod.rc
 vendor/etc/init/ipsec_mon.rc
 vendor/etc/init/volte_clientapi_ua.rc
