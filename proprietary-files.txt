@@ -1252,9 +1252,7 @@ vendor/bin/hw/mtkfusionrild
 vendor/bin/hw/vendor.mediatek.hardware.nwk_opt@1.0-service
 vendor/bin/ccci_mdinit
 vendor/bin/ccci_rpcd
-vendor/bin/gsm0710muxd
 vendor/bin/xcap
-vendor/etc/init/gsm0710muxd.rc
 vendor/etc/init/init.cccifsd.rc
 vendor/etc/init/init.cccimdinit.rc
 vendor/etc/init/init.cccirpcd.rc
