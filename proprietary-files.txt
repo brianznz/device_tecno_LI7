@@ -1267,6 +1267,7 @@ vendor/etc/init/init.xcap.rc
 vendor/etc/init/mtkrild.rc
 vendor/etc/init/vendor.mediatek.hardware.nwk_opt@1.0-service.rc
 vendor/lib/libverno.so
+vendor/lib64/libverno.so
 vendor/lib64/libccci_util.so
 vendor/lib64/libcrypto-md.so
 vendor/lib64/libcurl-md.so
