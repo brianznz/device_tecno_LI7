@@ -1489,7 +1489,6 @@ vendor/bin/AgentTest
 vendor/bin/TransSchedTest
 vendor/bin/aee_aedv64_v2
 vendor/bin/aee_dumpstatev_v2
-vendor/bin/aeev_v2
 vendor/bin/applypatch
 vendor/bin/atcid
 vendor/bin/audiocmdservice_atci
@@ -1535,7 +1534,6 @@ vendor/bin/netdc
 vendor/bin/paytrigger_test
 vendor/bin/pnpmgr
 vendor/bin/rt5512_calibration
-vendor/bin/rttv_v2
 vendor/bin/smartcharging
 vendor/bin/smartpa_nvtest
 vendor/bin/storage_feature_cloudctl
