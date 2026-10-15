@@ -18,7 +18,6 @@ vendor/lib64/audio_common-aidl-cpp.so
 vendor/lib64/audioclient-types-aidl-cpp.so
 vendor/lib64/framework-permission-aidl-cpp.so
 vendor/lib64/libTransNSv2.so
-vendor/lib64/libaedv.so
 vendor/lib64/libalsautils.so
 vendor/lib64/libaudioclient_aidl_conversion.so
 vendor/lib64/libaudiofoundation.so
@@ -1187,7 +1186,6 @@ vendor/lib64/libadpcmdec_mtk.so
 vendor/lib64/libcodec2_hidl@1.1.so
 vendor/lib64/libcodec2_hidl@1.2.so
 vendor/lib64/libcodec2_hidl_plugin.so
-vendor/lib64/libcodec2_mtk_c2store.so
 vendor/lib64/libcodec2_mtk_vdec.so
 vendor/lib64/libcodec2_mtk_venc.so
 vendor/lib64/libcodec2_soft_common.so
@@ -1309,7 +1307,6 @@ vendor/lib64/vendor.mediatek.hardware.mtkradioex@3.0.so
 vendor/lib64/vendor.mediatek.hardware.nwk_opt@1.0.so
 
 # Radio (IMS)
-system_ext/lib/vendor.mediatek.hardware.videotelephony-V1-ndk.so
 vendor/bin/hw/vtservice_hidl
 vendor/bin/bip
 vendor/bin/charon
@@ -1335,14 +1332,12 @@ vendor/etc/init/init.vtservice_hidl.rc
 vendor/etc/init/init.wod.rc
 vendor/etc/init/ipsec_mon.rc
 vendor/etc/init/volte_clientapi_ua.rc
-vendor/lib/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so
 vendor/lib/libipsec_ims_shr.so
 vendor/lib/librcs_volte_core.so
 vendor/lib/libvolte_core_shr.so
 vendor/lib/libvolte_xdmc_shr.so
 vendor/lib/libwo.so
 vendor/lib/vendor.mediatek.hardware.rcs@2.0.so
-vendor/lib/vendor.mediatek.hardware.videotelephony@1.0.so
 vendor/lib64/libcharon-ss.so
 vendor/lib64/libforkexecwrap.so
 vendor/lib64/libhydra.so
@@ -2616,7 +2611,6 @@ vendor/lib64/libnpagent_server.so
 vendor/lib64/libnwk_opt_halwrap_vendor.so
 vendor/lib64/liboissr.so
 vendor/lib64/liboissr_v3.so
-vendor/lib64/libperfctl_vendor.so
 vendor/lib64/libpkm.so
 vendor/lib64/libpn557_fw.so
 vendor/lib64/libpnpmgr.so
