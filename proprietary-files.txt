@@ -17,11 +17,9 @@ vendor/lib64/hw/audio.r_submix.mediatek.so;SYMLINK=vendor/lib64/hw/audio.r_submi
 vendor/lib64/hw/audio.usb.default.so
 vendor/lib64/audio_common-aidl-cpp.so
 vendor/lib64/libTransNSv2.so
-vendor/lib64/libaudiofoundation.so
 vendor/lib64/libaudiotoolkit_vendor.so
 vendor/lib64/libkaraoke.so
 vendor/lib64/libshmemcompat.so
-vendor/lib64/libshmemutil.so
 vendor/lib64/libtouch_rejection.so
 vendor/lib64/libvpnr.so
 vendor/lib64/libvpnr_enroll.so
@@ -32,10 +30,7 @@ vendor/lib64/vendor.mediatek.hardware.audio@7.1.so
 # Audio (FX modules)
 vendor/lib64/soundfx/libaudiopreprocessing_mtk.so
 vendor/lib64/soundfx/libdtsaudio.so
-vendor/lib64/soundfx/libdynproc.so
-vendor/lib64/soundfx/libhapticgenerator.so
 vendor/lib64/libdts-eagle-shared.so
-vendor/lib64/libvibrator.so
 
 # Audio configs
 system_ext/etc/audio_policy_configuration.xml
@@ -1175,16 +1170,10 @@ vendor/lib/libvcodec_utility_plat.mt6789.so
 vendor/lib/mt6789/libvcodecdrv.so;SYMLINK=vendor/lib/libvcodecdrv.so
 vendor/lib64/libMtkOmxCore.so
 vendor/lib64/libadpcmdec_mtk.so
-vendor/lib64/libcodec2_hidl@1.1.so
-vendor/lib64/libcodec2_hidl@1.2.so
-vendor/lib64/libcodec2_hidl_plugin.so
-vendor/lib64/libcodec2_soft_common.so
 vendor/lib64/libcodec2_vpp_qt_plugin.so
 vendor/lib64/libcodec2_vpp_rs_plugin.so
 vendor/lib64/libformatter.so
 vendor/lib64/libmp3dec_mtk.so
-vendor/lib64/libsfplugin_ccodec_utils.so
-vendor/lib64/libstagefright_bufferpool@2.0.1.so
 vendor/lib64/libstagefrighthw.so
 
 # Media (Dolby)
@@ -2487,7 +2476,6 @@ vendor/lib64/libaudiosmartpamtk.so
 vendor/lib64/libaurisysdemo.so
 vendor/lib64/libawinic_mtk_aurisys.so
 vendor/lib64/libbessound_hd_mtk_vendor.so
-vendor/lib64/libbinderdebug.so
 vendor/lib64/libblisrc32_vendor.so
 vendor/lib64/libbluetooth_hw_test.so
 vendor/lib64/libbluetooth_mtk_pure.so
