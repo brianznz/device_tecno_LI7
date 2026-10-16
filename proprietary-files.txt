@@ -19,7 +19,6 @@ vendor/lib64/audio_common-aidl-cpp.so
 vendor/lib64/libTransNSv2.so
 vendor/lib64/libaudiotoolkit_vendor.so
 vendor/lib64/libkaraoke.so
-vendor/lib64/libshmemcompat.so
 vendor/lib64/libtouch_rejection.so
 vendor/lib64/libvpnr.so
 vendor/lib64/libvpnr_enroll.so
