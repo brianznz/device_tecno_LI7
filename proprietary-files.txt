@@ -2504,7 +2504,6 @@ vendor/lib64/libdtsdsec.so
 vendor/lib64/libdynamiclog.so
 vendor/lib64/libfft_vendor.so
 vendor/lib64/libfgauge_gm30.so
-vendor/lib64/libflatbuffers-cpp.so
 vendor/lib64/mt6789/libgpudataproducer.so;SYMLINK=vendor/lib64/libgpudataproducer.so
 vendor/lib64/libgwsd-ril.so
 vendor/lib64/libgwsdv2-ril.so
