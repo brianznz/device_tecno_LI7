@@ -17,7 +17,6 @@ vendor/lib64/hw/audio.r_submix.mediatek.so;SYMLINK=vendor/lib64/hw/audio.r_submi
 vendor/lib64/hw/audio.usb.default.so
 vendor/lib64/audio_common-aidl-cpp.so
 vendor/lib64/libTransNSv2.so
-vendor/lib64/libalsautils.so
 vendor/lib64/libaudioclient_aidl_conversion.so
 vendor/lib64/libaudiofoundation.so
 vendor/lib64/libaudiotoolkit_vendor.so
