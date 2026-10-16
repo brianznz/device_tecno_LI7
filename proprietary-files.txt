@@ -187,7 +187,6 @@ vendor/lib64/libbluetooth_audio_session_mediatek.so
 # Boot
 vendor/bin/hw/android.hardware.boot@1.2-service
 vendor/etc/init/android.hardware.boot@1.2-service.rc
-vendor/etc/vintf/manifest/android.hardware.boot@1.2.xml
 
 # Camera
 system_ext/lib64/libarcsoft_calibverify_TriCamera.so
@@ -988,7 +987,6 @@ vendor/firmware/lib3a.ccu
 
 # CAS
 vendor/etc/init/android.hardware.cas@1.2-service-lazy.rc
-vendor/etc/vintf/manifest/android.hardware.cas@1.2-service-lazy.xml
 
 # Display
 system_ext/lib/vendor.mediatek.hardware.mms@1.0.so.hbtf
@@ -1070,7 +1068,6 @@ vendor/bin/hw/android.hardware.drm@1.4-service.clearkey
 vendor/bin/hw/android.hardware.drm@1.4-service.widevine
 vendor/etc/init/android.hardware.drm@1.4-service.clearkey.rc
 vendor/etc/init/android.hardware.drm@1.4-service.widevine.rc
-vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.4-service.clearkey.xml
 vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.4-service.widevine.xml
 vendor/lib64/mediacas/libclearkeycasplugin.so
 vendor/lib64/mediadrm/libdrmclearkeyplugin.so
@@ -1135,7 +1132,6 @@ vendor/bin/hw/android.hardware.health@2.1-service
 vendor/bin/fuelgauged
 vendor/etc/init/android.hardware.health@2.1-service.rc
 vendor/etc/init/fuelgauged_init.rc
-vendor/etc/vintf/manifest/android.hardware.health@2.1.xml
 
 # Keymaster
 vendor/bin/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-service
@@ -1382,7 +1378,6 @@ vendor/lib64/vendor.trustonic.tee.tui@1.0.so
 # USB
 vendor/bin/hw/android.hardware.usb@1.2-service-mediatekv2
 vendor/etc/init/android.hardware.usb@1.2-service-mediatekv2.rc
-vendor/etc/vintf/manifest/android.hardware.usb@1.2-service-mediatekv2.xml
 
 # Vibrator
 vendor/lib64/hw/vibrator.default.so
@@ -1399,7 +1394,6 @@ vendor/etc/init/android.hardware.wifi.supplicant-service.rc
 vendor/etc/init/android.hardware.wifi@1.0-service-lazy.rc
 vendor/etc/init/init.wlan_drv.rc
 vendor/etc/init/wlan_assistant.rc
-vendor/etc/vintf/manifest/android.hardware.wifi@1.0-service.xml
 vendor/lib64/libkeystore-wifi-hidl.so
 vendor/lib64/libwifi-hal.so
 vendor/lib64/vendor.transsion.hardware.wifi.station@1.0.so
@@ -2191,7 +2185,6 @@ vendor/etc/vintf/manifest/com.anc.fingerprint.extension@1.0-service.xml
 vendor/etc/vintf/manifest/gnss-default.xml:vendor/etc/vintf/manifest/gnss-mtk.xml
 vendor/etc/vintf/manifest/gnss@2.1-service.xml
 vendor/etc/vintf/manifest/lbs_hidl_service@1.0.xml
-vendor/etc/vintf/manifest/lights-mtk-default.xml
 vendor/etc/vintf/manifest/manifest.xml
 vendor/etc/vintf/manifest/manifest_apuware_apusys.xml
 vendor/etc/vintf/manifest/manifest_apuware_hmp.xml
@@ -2199,12 +2192,9 @@ vendor/etc/vintf/manifest/manifest_apuware_utils.xml
 vendor/etc/vintf/manifest/manifest_cameraprovider.xml
 vendor/etc/vintf/manifest/manifest_fingerprint.xml
 vendor/etc/vintf/manifest/manifest_hwcomposer.xml
-vendor/etc/vintf/manifest/manifest_media_c2_V1_1_default.xml
 vendor/etc/vintf/manifest/manifest_silead.xml
 vendor/etc/vintf/manifest/manifest_storage.xml
 vendor/etc/vintf/manifest/manifest_tneengine.xml
-vendor/etc/vintf/manifest/memtrack-mediatek.xml
-vendor/etc/vintf/manifest/power-default.xml
 vendor/etc/vintf/manifest/vendor.hardware.trancharge-service.example.xml
 vendor/etc/vintf/manifest/vendor.mediatek.hardware.paytrigger@1.0-service.xml
 vendor/etc/vintf/manifest/vendor.mediatek.hardware.tranHwInfo@1.0.xml
@@ -2216,7 +2206,6 @@ vendor/etc/vintf/manifest/vendor.transsion.hardware.security.trancriticalparavfy
 vendor/etc/vintf/manifest/vendor.transsion.hardware.trancam.trancamserver@1.0.xml
 vendor/etc/vintf/manifest/vendor.transsion.hardware.tranfacaidl-service.xml
 vendor/etc/vintf/manifest/vendor.transsion.hardware.tranradionet.xml
-vendor/etc/vintf/manifest/vibrator-mtk-default.xml
 vendor/etc/AbnormalDisplayLog_dynamic.xml
 vendor/etc/AudioLog_dynamic.xml
 vendor/etc/MNL_Config.xml
