@@ -984,7 +984,6 @@ vendor/lib64/vendor.transsion.performance.sched@1.0.so
 vendor/firmware/lib3a.ccu
 
 # CAS
-vendor/etc/init/android.hardware.cas@1.2-service-lazy.rc
 
 # Display
 system_ext/lib/vendor.mediatek.hardware.mms@1.0.so.hbtf
