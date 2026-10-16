@@ -60,7 +60,6 @@ vendor/etc/audio_param/CRSVol_ParamUnitDesc.xml
 vendor/etc/audio_param/HpImpedance_AudioParam.xml
 vendor/etc/audio_param/HpImpedance_ParamUnitDesc.xml
 vendor/etc/audio_param/MicInfo_AudioParam.xml
-vendor/etc/audio_param/MicInfo_ParamUnitDesc.xml
 vendor/etc/audio_param/PlaybackACF_AudioParam.xml
 vendor/etc/audio_param/PlaybackACF_ParamUnitDesc.xml
 vendor/etc/audio_param/PlaybackDRC_AudioParam.xml
@@ -2038,7 +2037,6 @@ vendor/etc/vintf/manifest/vendor.transsion.hardware.tranfacaidl-service.xml
 vendor/etc/vintf/manifest/vendor.transsion.hardware.tranradionet.xml
 vendor/etc/AbnormalDisplayLog_dynamic.xml
 vendor/etc/AudioLog_dynamic.xml
-vendor/etc/MNL_Config.xml
 vendor/etc/SEC_THN31_FW_VTP.txt.bin
 vendor/etc/VideoLog_dynamic.xml
 vendor/etc/ac8MobileLegensModelLabel.txt
