@@ -1787,7 +1787,6 @@ vendor/etc/init/lights-mtk-default.rc
 vendor/etc/init/loghidlvendorservice.rc
 vendor/etc/init/md_monitor.rc
 vendor/etc/init/memfusion.rc
-vendor/etc/init/memtrack-mediatek.rc
 vendor/etc/init/mtk_pkm_service.rc
 vendor/etc/init/mtklog.rc
 vendor/etc/init/muxreport.rc
