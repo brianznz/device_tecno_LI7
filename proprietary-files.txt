@@ -2082,8 +2082,6 @@ vendor/etc/nnapi_powerhal.json
 vendor/etc/nt37703a_fhdp_dsi_vdo_tm_tm_120hz_x6880_cust_color.xml
 vendor/etc/partition_permission.sh
 vendor/etc/pnpmgr.db
-vendor/etc/power_app_cfg.xml
-vendor/etc/power_app_fling_cfg.xml
 vendor/etc/qt.cfg
 vendor/etc/rm69220_fhdp_dsi_vdo_dsc_csot_csot_120hz_x6880_cust_color.xml
 vendor/etc/slp_conf
