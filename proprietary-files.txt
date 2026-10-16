@@ -1330,7 +1330,6 @@ vendor/etc/init/android.hardware.security.keymint-service.trustonic.rc
 vendor/etc/vintf/manifest/android.hardware.security.keymint-service.trustonic.xml
 vendor/etc/vintf/manifest/android.hardware.security.secureclock-service.trustonic.xml
 vendor/etc/vintf/manifest/android.hardware.security.sharedsecret-service.trustonic.xml
-vendor/lib64/libcppbor_external.so
 
 # Sensors
 vendor/bin/hw/android.hardware.sensors@2.0-service.multihal-mediatek
