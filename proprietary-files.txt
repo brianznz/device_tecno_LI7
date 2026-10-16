@@ -1132,11 +1132,8 @@ system_ext/lib/libgralloc_extra_sys.so
 system_ext/lib/libsf_cpupolicy.so
 system_ext/lib/libstagefright_mbrain.so
 system_ext/lib/libstagefright_wfd_mtk.so
-vendor/bin/hw/android.hardware.media.c2@1.2-mediatek
-vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b
 vendor/bin/vpud
 vendor/lib/libvpud_vcodec.so
-vendor/etc/init/android.hardware.media.c2@1.2-mediatek.rc
 vendor/etc/seccomp_policy/mediacodec.policy
 vendor/lib/libvcodec_oal.so
 vendor/lib/mt6789/libvcodec_utility.so;SYMLINK=vendor/lib/libvcodec_utility.so
