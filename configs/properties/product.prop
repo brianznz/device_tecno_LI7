@@ -18,7 +18,6 @@ telephony.active_modems.max_count=3
 
 # Miscellaneous
 dalvik.vm.background-dex2oat-threads=4
-dalvik.vm.ps-min-first-save-ms=8000
 os.charging_animation_type=4
 os.charging_animation_wire_power=0
 os.charging_animation_wireless_power=0
@@ -83,12 +82,9 @@ ro.cloudserver.clouddisk.support=1
 ro.com.google.acsa=true
 ro.com.google.gmsversion=15_202503
 ro.com.google.lens.oem_camera_package=com.transsion.camera
-ro.config.alarm_alert=Rise_Slowly.ogg
 ro.config.alarm_vol_default=13
 ro.config.media_vol_default=13
 ro.config.notification_lra=Acclivity.he
-ro.config.notification_sound=Acclivity.ogg
-ro.config.ringtone=Elegant.ogg&Elegant.ogg
 ro.config.schedule_sound=Alarm.ogg
 ro.config.system_vol_default=15
 ro.config.timer_alert=Hasty.ogg
