@@ -2678,8 +2678,4 @@ vendor/lib64/vendor.tms.tmsnfc@1.0.so
 vendor/lib64/tms-utils.so
 vendor/lib/vendor.mediatek.hardware.videotelephony@1.0.so;MODULE_SUFFIX=_vendor
 vendor/lib64/vendor.mediatek.hardware.videotelephony@1.0.so;MODULE_SUFFIX=_vendor
-vendor/lib/libprotobuf-cpp-lite-3.9.1.so
-vendor/lib/libprotobuf-cpp-full-3.9.1.so
-vendor/lib64/libprotobuf-cpp-lite-3.9.1.so
-vendor/lib64/libprotobuf-cpp-full-3.9.1.so
 vendor/lib64/libminiui.so
