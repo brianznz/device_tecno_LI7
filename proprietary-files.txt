@@ -1737,7 +1737,6 @@ vendor/etc/init/atcid.rc
 vendor/etc/init/audiocmdservice_atci.rc
 vendor/etc/init/bat_authencali_init.rc
 vendor/etc/init/bootperf.rc
-vendor/etc/init/boringssl_self_test.rc
 vendor/etc/init/chg_sence_init.rc
 vendor/etc/init/dmc_core.rc
 vendor/etc/init/dts.rc
