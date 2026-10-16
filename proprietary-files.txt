@@ -2240,7 +2240,6 @@ vendor/etc/firmware_slm_ata.bin
 vendor/etc/fstb.cfg
 vendor/etc/gbe.cfg
 vendor/etc/handset.wav
-vendor/etc/init.insmod.mt6789.cfg
 vendor/etc/libese-tms.conf
 vendor/etc/logExportConfig.xml
 vendor/etc/meow.cfg
