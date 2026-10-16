@@ -2085,7 +2085,6 @@ vendor/etc/pnpmgr.db
 vendor/etc/power_app_cfg.xml
 vendor/etc/power_app_fling_cfg.xml
 vendor/etc/powercontable.xml
-vendor/etc/powerscntbl.xml
 vendor/etc/qt.cfg
 vendor/etc/rm69220_fhdp_dsi_vdo_dsc_csot_csot_120hz_x6880_cust_color.xml
 vendor/etc/slp_conf
