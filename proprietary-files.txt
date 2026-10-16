@@ -2004,7 +2004,6 @@ vendor/etc/mdota/MTK_OPOTA_SBPID_7.mcfopota
 vendor/etc/mdota/MTK_OPOTA_SBPID_8.mcfopota
 vendor/etc/mdota/MTK_OPOTA_SBPID_9.mcfopota
 vendor/etc/mdota/MTK_OTA.mcfota
-vendor/etc/memfusion2/fstab.enableswap_wb
 vendor/etc/performance/blacklist.json
 vendor/etc/performance/block_start_list.json
 vendor/etc/performance/keep_alive_config.json
@@ -2238,9 +2237,6 @@ vendor/etc/elliptic_sensor.xml
 vendor/etc/factory.ini
 vendor/etc/firmware_slm.bin
 vendor/etc/firmware_slm_ata.bin
-vendor/etc/fstab.emmc
-vendor/etc/fstab.enableswap
-vendor/etc/fstab.mt6789
 vendor/etc/fstb.cfg
 vendor/etc/gbe.cfg
 vendor/etc/handset.wav
