@@ -1734,15 +1734,12 @@ vendor/etc/gvoice/model/dse_model.bin
 vendor/etc/gvoice/model/g_model.bin
 vendor/etc/gvoice/model/spkEmb.bin
 vendor/etc/init/aee_aedv64_v2.rc
-vendor/etc/init/atcid.rc
 vendor/etc/init/audiocmdservice_atci.rc
 vendor/etc/init/bat_authencali_init.rc
 vendor/etc/init/bootperf.rc
 vendor/etc/init/chg_sence_init.rc
-vendor/etc/init/dmc_core.rc
 vendor/etc/init/dts.rc
 vendor/etc/init/eara-io-service.rc
-vendor/etc/init/em_hidl_user.rc
 vendor/etc/init/fpsgo.rc
 vendor/etc/init/gbe.rc
 vendor/etc/init/getgameserver.rc
@@ -1785,8 +1782,6 @@ vendor/etc/init/init.wmt_drv.rc
 vendor/etc/init/kswapd0_bind.rc
 vendor/etc/init/lbs_hidl_service.rc
 vendor/etc/init/lights-mtk-default.rc
-vendor/etc/init/loghidlvendorservice.rc
-vendor/etc/init/md_monitor.rc
 vendor/etc/init/memfusion.rc
 vendor/etc/init/mtk_pkm_service.rc
 vendor/etc/init/mtklog.rc
@@ -1804,7 +1799,6 @@ vendor/etc/init/trustonic.rc
 vendor/etc/init/v3avpud.rc
 vendor/etc/init/vendor.anc.rc
 vendor/etc/init/vendor.hardware.trancharge-service.example.rc
-vendor/etc/init/vendor.mediatek.hardware.aee@1.1-service.rc
 vendor/etc/init/vendor.mediatek.hardware.paytrigger@1.0-service.rc
 vendor/etc/init/vendor.mediatek.hardware.tranHwInfo@1.0-service.rc
 vendor/etc/init/vendor.silead.hardware.fingerprintext@1.0-service.rc
