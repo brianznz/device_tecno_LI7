@@ -2221,7 +2221,6 @@ vendor/etc/handset.wav
 vendor/etc/libese-tms.conf
 vendor/etc/logExportConfig.xml
 vendor/etc/meow.cfg
-vendor/etc/mkshrc
 vendor/etc/mpe.conf
 vendor/etc/mtk_omx_core.cfg
 vendor/etc/mtk_platform_codecs_config.xml
