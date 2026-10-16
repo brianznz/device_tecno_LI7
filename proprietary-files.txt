@@ -22,7 +22,6 @@ vendor/lib64/libkaraoke.so
 vendor/lib64/libtouch_rejection.so
 vendor/lib64/libvpnr.so
 vendor/lib64/libvpnr_enroll.so
-vendor/lib64/shared-file-region-aidl-cpp.so
 vendor/lib64/vendor.mediatek.hardware.audio@6.1.so
 vendor/lib64/vendor.mediatek.hardware.audio@7.1.so
 
