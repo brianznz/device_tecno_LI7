@@ -1077,8 +1077,6 @@ vendor/lib64/liboemcrypto.so
 vendor/lib64/libwvhidl.so
 
 # Face
-vendor/bin/hw/android.hardware.biometrics.face@1.0-service.example
-vendor/etc/init/android.hardware.biometrics.face@1.0-service.rc
 
 # Fingerprint
 vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-mediatek
