@@ -1473,7 +1473,6 @@ vendor/bin/hw/vendor.transsion.performance.sched@1.0-service
 vendor/bin/AgentTest
 vendor/bin/TransSchedTest
 vendor/bin/aee_aedv64_v2
-vendor/bin/applypatch
 vendor/bin/atcid
 vendor/bin/audiocmdservice_atci
 vendor/bin/autobt
