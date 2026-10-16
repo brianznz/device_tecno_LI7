@@ -2569,7 +2569,6 @@ vendor/lib64/mt6789/librmsclib1.so;SYMLINK=vendor/lib64/librmsclib1.so
 vendor/lib64/librpc.so
 vendor/lib64/librpmb_ca.so
 vendor/lib64/librt_extamp_intf.so
-vendor/lib64/libruy.so
 vendor/lib64/libscltm.so
 vendor/lib64/libsimlock.so
 vendor/lib64/libsimmelock.so
