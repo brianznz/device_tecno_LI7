@@ -1817,7 +1817,6 @@ vendor/etc/init/vendor.transsion.hardware.tranfacaidl-service.rc
 vendor/etc/init/vendor.transsion.hardware.tranradionet.rc
 vendor/etc/init/vendor.transsion.performance.sched@1.0-service.rc
 vendor/etc/init/vibrator-mtk-default.rc
-vendor/etc/init/vndservicemanager.rc
 vendor/etc/ipsec/ipsec.d/cacerts/DigiCertGlobalRootCA.crt
 vendor/etc/ipsec/ipsec.d/cacerts/DigiCertGlobalRootG2.crt
 vendor/etc/ipsec/ipsec.d/cacerts/DigiCertGlobalRootG3.crt
