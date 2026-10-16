@@ -1208,7 +1208,6 @@ vendor/lib64/7816-3-T1.so
 vendor/lib/7816-3-T1.so
 vendor/lib64/nfc_nci.thn31nfc.tms.so
 vendor/lib64/nfc_nci_nxp_snxxx.so
-vendor/lib64/vendor.nxp.nxpnfc@2.0.so
 
 # NFC configs
 vendor/etc/libnfc-nci.conf
