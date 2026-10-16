@@ -2248,7 +2248,6 @@ vendor/etc/tran_avb.pubkey
 vendor/etc/tran_camprofiles.xml
 vendor/etc/trancam_filelock.json
 vendor/etc/trans_sched_config.xml
-vendor/etc/ueventd.rc
 vendor/etc/vendor-apns-conf.xml
 vendor/etc/virtual-spn-conf-by-efgid1.xml
 vendor/etc/virtual-spn-conf-by-efpnn.xml
