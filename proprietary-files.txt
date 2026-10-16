@@ -1500,7 +1500,6 @@ vendor/bin/chg_sence
 vendor/bin/conninfra_loader
 vendor/bin/dconfig
 vendor/bin/dexecutor
-vendor/bin/dmabuf_dump
 vendor/bin/dmc_core
 vendor/bin/dtc_vendor
 vendor/bin/mt6789/dumpfaultd.mt6789;SYMLINK=vendor/bin/dumpfaultd.mt6789
