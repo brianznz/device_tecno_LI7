@@ -2605,7 +2605,6 @@ vendor/lib64/libwapi.so
 vendor/lib64/libwifitest.so
 vendor/lib64/libwpa_client.so
 vendor/lib64/libwpfa.so
-vendor/lib64/libz_stable.so
 vendor/lib64/meta_wifi_data.so
 vendor/lib64/mt6789/pblcgc02m3_mipi_raw_tuning.so;SYMLINK=vendor/lib64/pblcgc02m3_mipi_raw_tuning.so
 vendor/lib64/mt6789/pblcgc13a0ff_mipi_raw_tuning.so;SYMLINK=vendor/lib64/pblcgc13a0ff_mipi_raw_tuning.so
