@@ -185,8 +185,6 @@ vendor/lib64/libbluetooth_audio_session.so
 vendor/lib64/libbluetooth_audio_session_mediatek.so
 
 # Boot
-vendor/bin/hw/android.hardware.boot@1.2-service
-vendor/etc/init/android.hardware.boot@1.2-service.rc
 
 # Camera
 system_ext/lib64/libarcsoft_calibverify_TriCamera.so
