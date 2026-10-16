@@ -9,6 +9,11 @@ from extract_utils.fixups_blob import (
     blob_fixups_user_type,
 )
 
+from extract_utils.fixups_lib import (
+    lib_fixups,
+    lib_fixups_user_type,
+)
+
 from extract_utils.main import (
     ExtractUtils,
     ExtractUtilsModule,
@@ -36,10 +41,15 @@ blob_fixups: blob_fixups_user_type = {
         .remove_needed('libpixelflinger.so'),
 }
 
+lib_fixups: lib_fixups_user_type = {
+    **lib_fixups,
+}
+
 module = ExtractUtilsModule(
     'X6880',
     'infinix',
     blob_fixups=blob_fixups,
+    lib_fixups=lib_fixups,
     namespace_imports=namespace_imports,
 )
 
