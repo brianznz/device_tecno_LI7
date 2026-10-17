@@ -217,6 +217,9 @@ PRODUCT_PACKAGES += \
 # IMS (mtkradioex 3.0 + mms in manifest)
 $(call inherit-product, vendor/mediatek/ims/ims.mk)
 
+# Include GSI keys
+$(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
+
 # Keymaster
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.keystore.app_attest_key.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.keystore.app_attest_key.xml
@@ -354,6 +357,9 @@ PRODUCT_PACKAGES += \
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
+
+# Enforce generic ramdisk allow list
+$(call inherit-product, $(SRC_TARGET_DIR)/product/generic_ramdisk.mk)
 
 # Power (mtkpower 1.2 impl in blobs)
 PRODUCT_PACKAGES += \
