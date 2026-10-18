@@ -1,1 +1,2 @@
 allow vold sysfs_dm:dir { add_name create };
+allow vold sysfs_dm:file { create write };
