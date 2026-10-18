@@ -11,3 +11,4 @@ allow init sysfs_dm:file { create write };
 allow init sysfs_fs_f2fs:dir { add_name create };
 allow init sysfs_fs_f2fs:file { create write };
 allow init sysfs:dir add_name;
+allow init sysfs:file create;
