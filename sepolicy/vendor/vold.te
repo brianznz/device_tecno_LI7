@@ -1,0 +1,1 @@
+allow vold sysfs_dm:dir { add_name create };
