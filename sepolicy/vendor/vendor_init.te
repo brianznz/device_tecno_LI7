@@ -19,3 +19,4 @@ rw_dir_file(vendor_init, sysfs_leds)
 allow vendor_init default_prop:property_service set;
 allow vendor_init nfc_device:lnk_file setattr;
 allow vendor_init sysfs:dir add_name;
+allow vendor_init sysfs:file create;
