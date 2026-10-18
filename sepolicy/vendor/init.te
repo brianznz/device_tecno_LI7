@@ -6,3 +6,4 @@ allow init jiiov_fp_device:chr_file { ioctl read write getattr open };
 get_prop(init, vendor_mtk_service_nvram_restore_prop)
 get_prop(init, vts_status_prop)
 allow init sysfs_devices_block:dir { add_name create };
+allow init sysfs_dm:dir { add_name create };
