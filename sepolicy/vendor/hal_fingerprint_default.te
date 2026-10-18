@@ -35,3 +35,4 @@ hal_client_domain(hal_fingerprint_default, hal_health)
 set_prop(hal_fingerprint_default, vendor_fingerprint_prop)
 set_prop(hal_fingerprint_default, vendor_mtk_default_prop)
 set_prop(hal_fingerprint_default, vendor_silead_fp_prop)
+allow hal_fingerprint_default sysfs_batteryinfo:dir r_dir_perms;
