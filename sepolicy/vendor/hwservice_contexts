@@ -18,3 +18,4 @@ vendor.nxp.nxpnfclegacy::INxpNfcLegacy                                          
 
 # Wi-Fi
 vendor.transsion.hardware.wifi.hostapd::IHostapd                                    u:object_r:hal_wifi_hostapd_hwservice:s0
+com.anc.fingerprint.extension::IFingerprintExtension                          u:object_r:anc_fingerprint_extension_hwservice:s0
