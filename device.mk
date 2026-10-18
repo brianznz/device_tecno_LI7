@@ -116,7 +116,8 @@ TARGET_SCREEN_WIDTH := 1080
 # Boot control HAL
 PRODUCT_PACKAGES += \
     com.android.hardware.boot \
-    android.hardware.boot-service.default_recovery
+    android.hardware.boot-service.mediatek \
+    android.hardware.boot-service.mediatek_recovery
 
 # Camera
 PRODUCT_PACKAGES += \
