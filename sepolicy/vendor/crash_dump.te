@@ -1,2 +1,1 @@
 allow crash_dump resourcecache_data_file:file r_file_perms;
-allow crash_dump vendor_overlay_file:file r_file_perms;
