@@ -1,2 +1,1 @@
 allow vold sysfs_dm:file { create write };
-allow vold persist_data_file:dir { read open ioctl };
