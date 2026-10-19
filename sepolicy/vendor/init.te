@@ -8,7 +8,6 @@ get_prop(init, vts_status_prop)
 allow init sysfs_devices_block:dir { add_name create };
 allow init sysfs_dm:dir { add_name create };
 allow init sysfs_dm:file { create write };
-allow init sysfs_fs_f2fs:dir { add_name create };
 allow init sysfs_fs_f2fs:file { create write };
 allow init sysfs:file create;
 allow init tranfs_block_device:lnk_file relabelto;
