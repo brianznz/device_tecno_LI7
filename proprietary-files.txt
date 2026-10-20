@@ -2038,10 +2038,12 @@ vendor/lib64/vendor.mediatek.hardware.power@2.0.so
 # Radio
 vendor/bin/hw/mtkfusionrild
 vendor/bin/ccci_mdinit
+vendor/bin/ccci_fsd
 vendor/bin/ccci_rpcd
 vendor/bin/gsm0710muxd
 vendor/etc/apdb/APDB_MT6789___W2452
 vendor/etc/apdb/APDB_MT6789___W2452_ENUM
+vendor/etc/init/init.cccifsd.rc
 vendor/etc/init/gsm0710muxd.rc
 vendor/etc/init/init.cccimdinit.rc
 vendor/etc/init/init.cccirpcd.rc
