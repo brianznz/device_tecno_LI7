@@ -52,8 +52,7 @@
             <name>IRadio</name>
             <instance>em1</instance>
             <instance>em2</instance>
-            <instance>imsAospSlot1</instance>
-            <instance>imsAospSlot2</instance>
+
             <instance>se1</instance>
             <instance>se2</instance>
         </interface>
