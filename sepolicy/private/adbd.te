@@ -1,2 +1,1 @@
 allow adbd pstorefs:dir { open read search };
-allow adbd pstorefs:file r_file_perms;

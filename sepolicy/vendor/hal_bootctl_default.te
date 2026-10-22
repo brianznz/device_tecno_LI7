@@ -1,1 +1,1 @@
-allow hal_bootctl_default system_file:file r_file_perms;
+# no additional rules
