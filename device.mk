@@ -515,4 +515,4 @@ PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/wifi/,$(TARGET_COPY_OUT_VENDOR)/etc/wifi)
 
 # Inherit the proprietary files
-$(call inherit-product, vendor/infinix/X6880/X6880-vendor.mk)
+$(call inherit-product, vendor/tecno/LI7/LI7-vendor.mk)
