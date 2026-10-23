@@ -1,10 +1,10 @@
 ## All proprietary files from this list, unless pinned and noted otherwise, are
-## from X6880-15.1.2.145SP10(OP001PF001AZ)
+## from LI7-15.1.2.128SP01(BASE001PF001AZ)
 
 dpm.img;AB
 gz.img;AB
 lk.bin:lk.img;AB
-logo.bin:logo.img;AB|e8b023b92674088a6dc44c817dc137fd24e82220
+logo.bin:logo.img;AB|24e9aea6603f2a66f4928d9720091ebf02977983
 mcupm.img;AB
 md1img.img;AB
 pi_img.img;AB
