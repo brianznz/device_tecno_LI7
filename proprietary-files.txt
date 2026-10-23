@@ -1601,8 +1601,4 @@ vendor/etc/firmware_slm_ata.bin
 vendor/bin/hw/android.hardware.nfc_snxxx@1.2-service
 vendor/etc/init/android.hardware.nfc_snxxx@1.2-service.rc
 
-vendor/lib64/android.hardware.nfc@1.0.so;MODULE=nfc_hidl_1_0_vendor;DISABLE_DEPS
-vendor/lib64/android.hardware.nfc@1.1.so;MODULE=nfc_hidl_1_1_vendor;DISABLE_DEPS
-vendor/lib64/android.hardware.nfc@1.2.so;MODULE=nfc_hidl_1_2_vendor;DISABLE_DEPS
 vendor/lib64/nfc_nci_nxp_snxxx.so;DISABLE_DEPS
-vendor/lib64/vendor.nxp.nxpnfc@2.0.so;DISABLE_DEPS
