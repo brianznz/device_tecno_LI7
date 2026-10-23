@@ -27,8 +27,12 @@ PRODUCT_SYSTEM_DEVICE := LI7
 
 BUILD_FINGERPRINT := TECNO/LI7-OP/TECNO-LI7:15/AP3A.240905.015.A2/128004:user/release-keys
 
-# Axion device properties
-AXION_CAMERA_REAR_INFO := 108
-AXION_CAMERA_FRONT_INFO := 32
-AXION_MAINTAINER := ーケrayannn
-AXION_PROCESSOR := Helio_G99_Ultimate
+# InfinityX device properties
+# Maintainer Name
+INFINITY_MAINTAINER := "brianznz"
+
+# Whether the device supports Fingerprint On Display
+TARGET_HAS_UDFPS := true
+
+# Whether Including Google Apps
+WITH_GAPPS := true
