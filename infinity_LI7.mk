@@ -11,12 +11,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/tecno/LI7/device.mk)
 
 # Inherit some common Lineage stuff 
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 TARGET_DISABLE_EPPE := true
 
 BOARD_VENDOR := TECNO
 PRODUCT_DEVICE := LI7
-PRODUCT_NAME := lineage_LI7
+PRODUCT_NAME := infinity_LI7
 PRODUCT_BRAND := TECNO
 PRODUCT_MANUFACTURER := TECNO
 PRODUCT_MODEL := TECNO LI7
