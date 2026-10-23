@@ -1597,3 +1597,8 @@ vendor/etc/wfd_source_capability.csv
 vendor/lib64/libwifi-hal.so:vendor/lib64/libwifi-hal-mtk.so;FIX_SONAME
 vendor/etc/firmware_slm.bin
 vendor/etc/firmware_slm_ata.bin
+
+vendor/bin/hw/android.hardware.nfc_snxxx@1.2-service
+vendor/etc/init/android.hardware.nfc_snxxx@1.2-service.rc
+vendor/lib64/android.hardware.nfc@1.2.so
+
