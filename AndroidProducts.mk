@@ -4,9 +4,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/infinity_LI7.mk
+    $(LOCAL_DIR)/lineage_LI7.mk
 
 COMMON_LUNCH_CHOICES := \
-    infinity_LI7-user \
-    infinity_LI7-userdebug \
-    infinity_LI7-eng
+    lineage_LI7-user \
+    lineage_LI7-userdebug \
+    lineage_LI7-eng
