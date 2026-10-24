@@ -253,3 +253,6 @@ TARGET_KERNEL_SOURCE := $(KERNEL_PATH)/kernel-headers
 
 # Inherit the proprietary files
 include vendor/tecno/LI7/BoardConfigVendor.mk
+
+#udfps
+TARGET_CUSTOM_UDFPS := true
